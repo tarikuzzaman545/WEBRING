@@ -54,7 +54,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                 <l.icon size={18} />
                 <span className="text-sm font-medium">{l.name}</span>
               </div>
-              {l.badge > 0 && <span className="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">{l.badge}</span>}
+              {l.badge !== undefined && l.badge > 0 && <span className="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">{l.badge}</span>}
             </Link>
           ))}
         </nav>
