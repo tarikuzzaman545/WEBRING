@@ -1,0 +1,1 @@
+import { Router } from "express"; import { getPricing, updatePricing } from "../controllers/pricingController"; import { requireAuth } from "../middleware/auth"; const router = Router(); router.get("/", getPricing); router.put("/:tierId", requireAuth, updatePricing); export default router;

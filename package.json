@@ -1,0 +1,25 @@
+{
+  "name": "webring-platform",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace backend\" \"npm run dev --workspace frontend\"",
+    "dev:frontend": "npm run dev --workspace frontend",
+    "dev:backend": "npm run dev --workspace backend",
+    "build": "npm run build --workspace backend && npm run build --workspace frontend",
+    "seed": "npm run seed --workspace backend"
+  },
+  "overrides": {
+    "postcss": "^8.5.13",
+    "next": {
+      "postcss": "^8.5.13"
+    }
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

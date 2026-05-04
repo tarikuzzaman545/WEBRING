@@ -1,0 +1,30 @@
+{
+  "logo": {
+    "main": "",
+    "dark": "",
+    "favicon": ""
+  },
+  "hero": {
+    "featured": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "team": {
+    "mariful": "",
+    "many": "",
+    "sabbir": ""
+  },
+  "services": {
+    "aiPhotography": "",
+    "lifestyle": "",
+    "ecommerce": "",
+    "video": "",
+    "branding": ""
+  },
+  "og": ""
+}

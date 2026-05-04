@@ -1,0 +1,1 @@
+import { Router } from "express"; import { getTeam, updateTeam } from "../controllers/teamController"; import { requireAuth } from "../middleware/auth"; const router = Router(); router.get("/", getTeam); router.put("/:memberId", requireAuth, updateTeam); export default router;

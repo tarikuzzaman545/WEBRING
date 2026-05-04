@@ -1,0 +1,1 @@
+import { Router } from "express"; import { getMessages, markRead, deleteMessage } from "../controllers/messagesController"; import { requireAuth } from "../middleware/auth"; const router = Router(); router.get("/", requireAuth, getMessages); router.put("/:id/read", requireAuth, markRead); router.delete("/:id", requireAuth, deleteMessage); export default router;

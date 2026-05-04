@@ -1,0 +1,51 @@
+{
+  "members": [
+    {
+      "id": "mariful",
+      "name": "Shiekh Mariful",
+      "role": "CEO & Creative Director",
+      "responsibilities": [
+        "Creative Final Decision Maker",
+        "Client Consultation"
+      ],
+      "bio": "Leads the creative vision of WEBRING.",
+      "photo": "",
+      "social": {
+        "instagram": "",
+        "linkedin": ""
+      }
+    },
+    {
+      "id": "many",
+      "name": "Many",
+      "role": "Co-Founder & Growth Lead",
+      "responsibilities": [
+        "Lead Generation",
+        "Business Development",
+        "Consultation"
+      ],
+      "bio": "Drives WEBRING growth strategy.",
+      "photo": "",
+      "social": {
+        "instagram": "",
+        "linkedin": ""
+      }
+    },
+    {
+      "id": "sabbir",
+      "name": "Sabbir",
+      "role": "HR Manager & Senior Editor",
+      "responsibilities": [
+        "Creative Initial Decision Maker",
+        "AI Editing",
+        "Team Operations"
+      ],
+      "bio": "Bridges operations with creativity.",
+      "photo": "",
+      "social": {
+        "instagram": "",
+        "linkedin": ""
+      }
+    }
+  ]
+}

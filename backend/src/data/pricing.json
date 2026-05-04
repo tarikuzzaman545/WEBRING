@@ -1,0 +1,48 @@
+{
+  "tiers": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "price": 199,
+      "period": "per project",
+      "highlighted": false,
+      "features": [
+        "5 product images",
+        "1 service type",
+        "2 revisions",
+        "3-day delivery"
+      ],
+      "cta": "Get Started"
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "price": 499,
+      "period": "per project",
+      "highlighted": true,
+      "features": [
+        "15 images",
+        "3 service types",
+        "Unlimited revisions",
+        "5-day delivery",
+        "Priority support"
+      ],
+      "cta": "Book a Call"
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "price": 0,
+      "period": "custom",
+      "highlighted": false,
+      "features": [
+        "Unlimited images",
+        "All services",
+        "Dedicated manager",
+        "Custom timeline",
+        "Monthly retainer"
+      ],
+      "cta": "Contact Us"
+    }
+  ]
+}
