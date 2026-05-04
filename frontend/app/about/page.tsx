@@ -67,12 +67,12 @@ export default function AboutPage() {
             </h2>
           </Reveal>
 
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {team.map((member) => (
               <Reveal key={member._id}>
                 <article className="overflow-hidden rounded-card border border-white/15 bg-surface">
                   <img
-                    className="aspect-[4/5] w-full object-cover"
+                    className="aspect-[4/5] w-full object-cover object-top max-h-[400px] sm:max-h-[500px]"
                     src={member.photoUrl}
                     alt={member.name}
                   />

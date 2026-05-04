@@ -98,7 +98,7 @@ export function HomeExperience({ content }: { content: PublicContent }) {
             <div className="overflow-hidden rounded-card border border-white/15 bg-surface shadow-2xl">
               {settings.hero.imageUrl ? (
                 <img
-                  className="aspect-[4/5] h-full w-full object-cover lg:aspect-[5/6]"
+                  className="aspect-[4/3] w-full object-cover sm:aspect-[4/5] lg:aspect-[5/6] max-h-[70vh]"
                   src={settings.hero.imageUrl}
                   alt={settings.hero.headline || settings.brandName}
                 />
@@ -215,10 +215,10 @@ export function HomeExperience({ content }: { content: PublicContent }) {
 
         <section id="team" className="mx-auto max-w-[1480px] px-4 py-20 sm:px-6 lg:px-8">
           <SectionIntro {...settings.sections.team} />
-          <div className="grid gap-4 lg:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {content.team.map((member) => (
               <article className="overflow-hidden rounded-card border border-white/15 bg-surface" key={member._id}>
-                <img className="aspect-[4/5] w-full object-cover" src={member.photoUrl} alt={member.name} />
+                <img className="aspect-[4/5] w-full object-cover object-top max-h-[400px] sm:max-h-[500px]" src={member.photoUrl} alt={member.name} />
                 <div className="p-5">
                   <p className="text-xs font-black uppercase text-accent">{member.role}</p>
                   <h3 className="mt-2 text-3xl font-black uppercase leading-none text-white">{member.name}</h3>
