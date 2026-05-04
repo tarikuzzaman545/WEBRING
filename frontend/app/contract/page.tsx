@@ -4,9 +4,23 @@ import { colorToRgb, getPublicContent } from "@/lib/api";
 import type { CSSProperties } from "react";
 
 export default async function ContractPage() {
-  const content = await getPublicContent();
+  let content = null;
+  try {
+    content = await getPublicContent();
+  } catch (error) {
+    return (
+      <main className="grid min-h-screen place-items-center bg-black p-8 text-center text-white">
+        <div>
+          <h1 className="text-3xl font-black uppercase text-red-500 mb-4">Backend Connection Error</h1>
+          <p className="mt-4 text-white/80 max-w-lg mx-auto">
+            The frontend is live, but it cannot connect to the backend server.
+          </p>
+        </div>
+      </main>
+    );
+  }
 
-  if (!content.settings) {
+  if (!content || !content.settings) {
     return null;
   }
 
